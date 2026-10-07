@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avions | Dassault Aviation</title>
+    <meta name="description" content="Achetez votre avion : Rafale, Mirage, Falcon, Super Étendard, nEUROn." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="static/styleG.css" rel="stylesheet" />
+    <script>try { const t = localStorage.getItem("dassault-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+    <script src="static/produits.js" defer></script>
+    <script src="static/panier.js" defer></script>
+    <script src="static/site.js" defer></script>
+    <script src="static/jeu.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"><strong>DASSAULT</strong><span>Aviation</span></a>
+        <nav class="header-nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="Avions.html" aria-current="page">Avions</a><a href="Missiles.html">Missiles</a><a href="Recherche.html">Comparatif</a><a href="Contact.html">Service client</a><a class="cart-link" href="Panier.html">Panier<span class="cart-count" data-cart-count hidden>0</span></a><button class="icon-btn" type="button" data-search-open hidden aria-label="Rechercher (raccourci : /)" title="Rechercher (/)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button><button class="icon-btn theme-toggle" type="button" data-theme-toggle hidden aria-label="Basculer entre thème clair et sombre" title="Thème clair / sombre"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></nav>
+      </div>
+    </header>
+
+    <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Boutique</p>
+        <h1>Les avions</h1>
+        <p>Neufs, reconditionnés ou de collection : 11 appareils livrés en vol, directement chez vous.</p>
+      </div>
+    </section>
+      <section class="section">
+        <div class="wrap">
+        <div class="filters" role="radiogroup" aria-label="Filtrer les avions">
+        <input class="sr-only" type="radio" name="filtre" id="f-tous" checked /><label for="f-tous">Tous</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-service" /><label for="f-service">Neufs et récents</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-combat" /><label for="f-combat">Combat</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-affaires" /><label for="f-affaires">Affaires</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-prototype" /><label for="f-prototype">Prototypes et drones</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-historique" /><label for="f-historique">Collection</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-promo" /><label for="f-promo">Bonnes affaires</label>
+        </div>
+          <div class="results">
+            <div class="cards">
+        <article class="card" data-cat="combat service" data-compare-id="rafale" data-quick data-id="rafale" data-name="Rafale" data-href="Avions/rafale.html" data-img="static/image/rafale.jpg" data-version="Rafale C — monoplace" data-price="90000000">
+          <span class="card-badge">N° 1 des ventes</span><div class="media"><div class="media-photo" role="img" aria-label="Rafale en vol" style="background-image: url('static/image/rafale.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Avion de combat omnirôle</span><span class="tag tag-ok">Neuf</span></div>
+            <h3><a href="Avions/rafale.html">Rafale</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Note : </span>4,8<span class="muted"> (2 341 avis)</span></p>
+            <p class="card-text">Biréacteur à aile delta et plans canard, capable d&#x27;enchaîner toutes les missions au cours d&#x27;un même vol.</p>
+            <dl class="mini-specs"><div><dt>Vitesse</dt><dd>Mach 1,8</dd></div><div><dt>Rayon d&#x27;action</dt><dd>1 850 km</dd></div><div><dt>Emport</dt><dd>9,5 t</dd></div></dl>
+            <p class="price"><small>à partir de</small><span>90 000 000 €</span></p>
+            <p class="delivery">Livraison estimée : 3 à 5 ans</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-rafale">Quantité de Rafale</label><input class="qty-input" id="qq-rafale" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="combat service" data-compare-id="mirage-2000" data-quick data-id="mirage-2000" data-name="Mirage 2000" data-href="Avions/mirage-2000.html" data-img="static/image/Mirage_2000C.jpg" data-version="Mirage 2000-5 — multirôle" data-price="40000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Mirage 2000C en vol après un ravitaillement" style="background-image: url('static/image/Mirage_2000C.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Avion de combat</span><span class="tag tag-old">Reconditionné</span></div>
+            <h3><a href="Avions/mirage-2000.html">Mirage 2000</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Note : </span>4,6<span class="muted"> (987 avis)</span></p>
+            <p class="card-text">Monoréacteur à aile delta : le retour de la formule Mirage, rendue plus maniable par les commandes de vol électriques.</p>
+            <dl class="mini-specs"><div><dt>Vitesse</dt><dd>Mach 2,2</dd></div><div><dt>Autonomie</dt><dd>1 550 km</dd></div><div><dt>Emport</dt><dd>6,3 t</dd></div></dl>
+            <p class="price"><small>à partir de</small><span>30 000 000 €</span></p>
+            <p class="delivery">Livraison sous 6 mois</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-mirage-2000">Quantité de Mirage 2000</label><input class="qty-input" id="qq-mirage-2000" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="affaires service" data-compare-id="falcon-6x" data-quick data-id="falcon-6x" data-name="Falcon 6X" data-href="Avions/falcon-6x.html" data-img="static/image/dassault.jpg" data-version="Falcon 6X — cabine 3 espaces" data-price="49000000">
+          <span class="card-badge">Choix du PDG</span><div class="media"><div class="media-photo" role="img" aria-label="Falcon 6X stationné à côté d&#x27;un Rafale B" style="background-image: url('static/image/dassault.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Avion d&#x27;affaires</span><span class="tag tag-ok">Neuf</span></div>
+            <h3><a href="Avions/falcon-6x.html">Falcon 6X</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Note : </span>4,9<span class="muted"> (412 avis)</span></p>
+            <p class="card-text">Biréacteur long-courrier doté de la cabine la plus haute et la plus large de sa catégorie.</p>
+            <dl class="mini-specs"><div><dt>Autonomie</dt><dd>10 186 km</dd></div><div><dt>Passagers</dt><dd>16</dd></div><div><dt>Vitesse</dt><dd>Mach 0,90</dd></div></dl>
+            <p class="price"><span>49 000 000 €</span></p>
+            <p class="delivery">Livraison sous 18 mois</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-falcon-6x">Quantité de Falcon 6X</label><input class="qty-input" id="qq-falcon-6x" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="affaires service" data-compare-id="falcon-8x" data-quick data-id="falcon-8x" data-name="Falcon 8X" data-href="Avions/falcon-8x.html" data-img="static/image/falcon-8x.jpg" data-version="Falcon 8X" data-price="58000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Falcon 8X en vol" style="background-image: url('static/image/falcon-8x.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Avion d&#x27;affaires</span><span class="tag tag-ok">Neuf</span></div>
+            <h3><a href="Avions/falcon-8x.html">Falcon 8X</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Note : </span>4,8<span class="muted"> (503 avis)</span></p>
+            <p class="card-text">Évolution allongée du 7X : le Falcon à la plus grande autonomie actuellement en service.</p>
+            <dl class="mini-specs"><div><dt>Autonomie</dt><dd>11 945 km</dd></div><div><dt>Passagers</dt><dd>16</dd></div><div><dt>Vitesse</dt><dd>Mach 0,90</dd></div></dl>
+            <p class="price"><span>58 000 000 €</span></p>
+            <p class="delivery">Livraison sous 18 mois</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-falcon-8x">Quantité de Falcon 8X</label><input class="qty-input" id="qq-falcon-8x" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="affaires service" data-compare-id="falcon-7x" data-quick data-id="falcon-7x" data-name="Falcon 7X" data-href="Avions/falcon-7x.html" data-img="static/image/falcon-7x.jpg" data-version="Falcon 7X — occasion récente" data-price="30000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Falcon 7X en vol" style="background-image: url('static/image/falcon-7x.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Avion d&#x27;affaires</span><span class="tag tag-old">Occasion</span></div>
+            <h3><a href="Avions/falcon-7x.html">Falcon 7X</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Note : </span>4,7<span class="muted"> (655 avis)</span></p>
+            <p class="card-text">Triréacteur long-courrier, premier avion d&#x27;affaires à commandes de vol électriques numériques.</p>
+            <dl class="mini-specs"><div><dt>Autonomie</dt><dd>11 020 km</dd></div><div><dt>Passagers</dt><dd>16</dd></div><div><dt>Vitesse</dt><dd>Mach 0,90</dd></div></dl>
+            <p class="price"><span>30 000 000 €</span></p>
+            <p class="delivery">Livraison sous 2 mois</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-falcon-7x">Quantité de Falcon 7X</label><input class="qty-input" id="qq-falcon-7x" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="prototype" data-compare-id="neuron" data-quick data-id="neuron" data-name="nEUROn" data-href="Avions/neuron.html" data-img="static/image/banniere_dassaultV2.jpg" data-version="nEUROn — démonstrateur unique" data-price="405000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Drone nEUROn volant en formation avec un Rafale B" style="background-image: url('static/image/banniere_dassaultV2.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Démonstrateur de drone de combat</span><span class="tag tag-old">Exemplaire unique</span></div>
+            <h3><a href="Avions/neuron.html">nEUROn</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★☆</span><span class="sr-only">Note : </span>4,2<span class="muted"> (6 avis)</span></p>
+            <p class="card-text">Aile volante furtive sans pilote, menée par Dassault avec cinq partenaires européens.</p>
+            <dl class="mini-specs"><div><dt>Pilote</dt><dd>Aucun</dd></div><div><dt>Envergure</dt><dd>12,5 m</dd></div><div><dt>Masse</dt><dd>≈ 7 t</dd></div></dl>
+            <p class="price"><span>405 000 000 €</span></p>
+            <p class="delivery">Livraison à négocier avec 6 pays</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-neuron">Quantité de nEUROn</label><input class="qty-input" id="qq-neuron" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="combat historique promo" data-compare-id="mirage-f1" data-quick data-id="mirage-f1" data-name="Mirage F1" data-href="Avions/mirage-f1.html" data-img="static/image/MirageF1.jpg" data-version="Mirage F1C — chasse" data-price="5000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Mirage F1 en vol" style="background-image: url('static/image/MirageF1.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Chasseur polyvalent</span><span class="tag tag-old">Occasion</span><span class="tag tag-deal">−38 %</span></div>
+            <h3><a href="Avions/mirage-f1.html">Mirage F1</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★☆</span><span class="sr-only">Note : </span>4,4<span class="muted"> (721 avis)</span></p>
+            <p class="card-text">Abandonnant l&#x27;aile delta pour une aile en flèche, il a équipé une dizaine de forces aériennes.</p>
+            <dl class="mini-specs"><div><dt>Vitesse</dt><dd>Mach 2,2</dd></div><div><dt>Plafond</dt><dd>20 000 m</dd></div><div><dt>Emport</dt><dd>6,3 t</dd></div></dl>
+            <p class="price"><small>à partir de</small><span>5 000 000 €</span> <s>8 000 000 €</s></p>
+            <p class="delivery">Livraison sous 2 mois</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-mirage-f1">Quantité de Mirage F1</label><input class="qty-input" id="qq-mirage-f1" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="combat historique" data-compare-id="super-etendard" data-quick data-id="super-etendard" data-name="Super Étendard" data-href="Avions/super-etendard.html" data-img="static/image/super-etendard.jpg" data-version="Super Étendard Modernisé" data-price="3000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Super Étendard sur un porte-avions" style="background-image: url('static/image/super-etendard.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Avion d&#x27;attaque embarqué</span><span class="tag tag-old">Occasion</span></div>
+            <h3><a href="Avions/super-etendard.html">Super Étendard</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★☆</span><span class="sr-only">Note : </span>4,3<span class="muted"> (85 avis)</span></p>
+            <p class="card-text">Avion d&#x27;attaque de la Marine nationale, rendu célèbre par l&#x27;Exocet lors de la guerre des Malouines.</p>
+            <dl class="mini-specs"><div><dt>Vitesse</dt><dd>Mach 1</dd></div><div><dt>Rayon d&#x27;action</dt><dd>850 km</dd></div><div><dt>Emport</dt><dd>2,1 t</dd></div></dl>
+            <p class="price"><span>3 000 000 €</span></p>
+            <p class="delivery">Porte-avions non fourni</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-super-etendard">Quantité de Super Étendard</label><input class="qty-input" id="qq-super-etendard" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="combat historique promo" data-compare-id="mirage-iii" data-quick data-id="mirage-iii" data-name="Mirage III" data-href="Avions/mirage-iii.html" data-img="static/image/mirage-iii.jpg" data-version="Mirage IIIE — collection" data-price="2000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Mirage III en vol" style="background-image: url('static/image/mirage-iii.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Intercepteur</span><span class="tag tag-old">Collection</span><span class="tag tag-deal">−33 %</span></div>
+            <h3><a href="Avions/mirage-iii.html">Mirage III</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★☆</span><span class="sr-only">Note : </span>4,5<span class="muted"> (1 422 avis)</span></p>
+            <p class="card-text">Premier avion de combat d&#x27;Europe de l&#x27;Ouest à dépasser Mach 2 : le chasseur qui a rendu Dassault célèbre.</p>
+            <dl class="mini-specs"><div><dt>Vitesse</dt><dd>Mach 2,2</dd></div><div><dt>Rayon d&#x27;action</dt><dd>1 200 km</dd></div><div><dt>Plafond</dt><dd>17 000 m</dd></div></dl>
+            <p class="price"><span>2 000 000 €</span> <s>3 000 000 €</s></p>
+            <p class="delivery">Livraison sous 3 mois</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-mirage-iii">Quantité de Mirage III</label><input class="qty-input" id="qq-mirage-iii" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="combat historique" data-compare-id="mirage-iv" data-quick data-id="mirage-iv" data-name="Mirage IV" data-href="Avions/mirage-iv.html" data-img="static/image/mirage-iv.jpg" data-version="Mirage IVP — collection, désarmé" data-price="8000000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Bombardier Mirage IV en vol" style="background-image: url('static/image/mirage-iv.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Bombardier stratégique</span><span class="tag tag-old">Pièce de musée</span></div>
+            <h3><a href="Avions/mirage-iv.html">Mirage IV</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★☆</span><span class="sr-only">Note : </span>4,1<span class="muted"> (62 avis)</span></p>
+            <p class="card-text">Bombardier biréacteur supersonique, premier vecteur de la dissuasion nucléaire française.</p>
+            <dl class="mini-specs"><div><dt>Vitesse</dt><dd>Mach 2,2</dd></div><div><dt>Rayon d&#x27;action</dt><dd>1 240 km</dd></div><div><dt>Équipage</dt><dd>2</dd></div></dl>
+            <p class="price"><span>8 000 000 €</span></p>
+            <p class="delivery">Livraison sous 3 mois</p>
+            <div class="card-buy" data-quick-box hidden><label class="sr-only" for="qq-mirage-iv">Quantité de Mirage IV</label><input class="qty-input" id="qq-mirage-iv" type="number" min="1" max="999" value="1" inputmode="numeric" data-quick-qty /><button class="btn btn-cart-sm" type="button" data-quick-add>Ajouter au panier</button></div>
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+        <article class="card" data-cat="prototype historique" data-compare-id="mirage-4000">
+          <div class="media"><div class="media-photo" role="img" aria-label="Prototype Mirage 4000 en vol" style="background-image: url('static/image/Mirage4000.jpg')"></div></div>
+          <div class="card-body">
+            <div class="tags"><span class="tag">Prototype de chasseur biréacteur</span><span class="tag tag-off">Indisponible</span></div>
+            <h3><a href="Avions/mirage-4000.html">Mirage 4000</a></h3>
+            <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span class="sr-only">Note : </span>4,9<span class="muted"> (1 avis)</span></p>
+            <p class="card-text">Grand frère biréacteur du Mirage 2000, développé sur fonds propres : un seul exemplaire construit.</p>
+            <dl class="mini-specs"><div><dt>Vitesse</dt><dd>Mach 2,3</dd></div><div><dt>Autonomie</dt><dd>2 000 km</dd></div><div><dt>Exemplaire</dt><dd>1</dd></div></dl>
+            <p class="price price-off">Indisponible</p>
+            <p class="delivery">Actuellement indisponible. Nous ne savons pas si cet article sera de nouveau en stock.</p>
+            
+            <span class="card-more">Voir l'offre</span>
+          </div>
+        </article>
+            </div>
+            <p class="results-count">Articles affichés :</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h2>Dassault Aviation</h2>
+            <p>La boutique en ligne où l'on achète un avion de chasse aussi facilement qu'une paire de chaussettes.</p>
+          </div>
+          <div>
+            <h2>Boutique</h2>
+            <ul>
+              <li><a href="Avions.html">Avions</a></li>
+              <li><a href="Missiles.html">Missiles</a></li>
+              <li><a href="Recherche.html">Comparatif</a></li>
+              <li><a href="Panier.html">Mon panier</a></li>
+              <li><a href="Contact.html">Service client</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Siège de Dassault Aviation</h2>
+            <address>78 quai Marcel Dassault<br />92210 Saint-Cloud, France</address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Évidemment, ce site est faux : je le précise pour les trois personnes du fond qui se sont perdues sur Internet.</p>
+          <button class="easter-egg" type="button" data-jeu-open title="Tiens, c'est cliquable ?"><img class="logo" src="static/image/logo_vita.svg" alt="Logo Vitality — lancer le mini-jeu" /></button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

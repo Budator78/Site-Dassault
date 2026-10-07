@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Comparatif | Dassault Aviation</title>
+    <meta name="description" content="Comparez les avions et missiles avant d&#x27;acheter." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="static/styleG.css" rel="stylesheet" />
+    <script>try { const t = localStorage.getItem("dassault-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+    <script src="static/produits.js" defer></script>
+    <script src="static/panier.js" defer></script>
+    <script src="static/site.js" defer></script>
+    <script src="static/jeu.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"><strong>DASSAULT</strong><span>Aviation</span></a>
+        <nav class="header-nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="Avions.html">Avions</a><a href="Missiles.html">Missiles</a><a href="Recherche.html" aria-current="page">Comparatif</a><a href="Contact.html">Service client</a><a class="cart-link" href="Panier.html">Panier<span class="cart-count" data-cart-count hidden>0</span></a><button class="icon-btn" type="button" data-search-open hidden aria-label="Rechercher (raccourci : /)" title="Rechercher (/)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button><button class="icon-btn theme-toggle" type="button" data-theme-toggle hidden aria-label="Basculer entre thème clair et sombre" title="Thème clair / sombre"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></nav>
+      </div>
+    </header>
+
+    <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Avant d'acheter</p>
+        <h1>Comparatif</h1>
+        <p>Comparez jusqu'à trois articles côte à côte, ou parcourez tout le catalogue dans les tableaux, du moins cher au plus cher.</p>
+      </div>
+    </section>
+      <section class="section compare-section" id="comparer" data-compare hidden>
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Côte à côte</p>
+              <h2>Comparer</h2>
+              <p>Choisissez jusqu'à trois articles. Astuce : le bouton « Comparer » des cartes les ajoute ici directement.</p>
+            </div>
+          </div>
+          <div class="compare-pickers" data-compare-pickers></div>
+          <div class="compare-grid" data-compare-grid></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+        <div class="filters" role="radiogroup" aria-label="Afficher">
+        <input class="sr-only" type="radio" name="filtre" id="f-tous" checked /><label for="f-tous">Tout</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-avions" /><label for="f-avions">Avions</label>
+        <input class="sr-only" type="radio" name="filtre" id="f-missiles" /><label for="f-missiles">Missiles</label>
+        </div>
+          <section class="cmp-section cmp-avions">
+            <div class="table-scroll">
+              <table class="cmp-table">
+                <caption>Avions</caption>
+                <thead><tr><th scope="col">Nom</th><th scope="col">Catégorie</th><th scope="col" colspan="3">Caractéristiques clés</th><th scope="col">Prix</th><th scope="col">État</th></tr></thead>
+                <tbody><tr data-cat="combat historique"><th scope="row"><a href="Avions/mirage-iii.html">Mirage III</a></th><td>Intercepteur</td><td>Mach 2,2</td><td>1 200 km</td><td>17 000 m</td><td class="num">2 000 000 €</td><td><span class="tag tag-old">Collection</span></td></tr><tr data-cat="combat historique"><th scope="row"><a href="Avions/super-etendard.html">Super Étendard</a></th><td>Avion d&#x27;attaque embarqué</td><td>Mach 1</td><td>850 km</td><td>2,1 t</td><td class="num">3 000 000 €</td><td><span class="tag tag-old">Occasion</span></td></tr><tr data-cat="combat historique"><th scope="row"><a href="Avions/mirage-f1.html">Mirage F1</a></th><td>Chasseur polyvalent</td><td>Mach 2,2</td><td>20 000 m</td><td>6,3 t</td><td class="num">5 000 000 €</td><td><span class="tag tag-old">Occasion</span></td></tr><tr data-cat="combat historique"><th scope="row"><a href="Avions/mirage-iv.html">Mirage IV</a></th><td>Bombardier stratégique</td><td>Mach 2,2</td><td>1 240 km</td><td>2</td><td class="num">8 000 000 €</td><td><span class="tag tag-old">Pièce de musée</span></td></tr><tr data-cat="combat service"><th scope="row"><a href="Avions/mirage-2000.html">Mirage 2000</a></th><td>Avion de combat</td><td>Mach 2,2</td><td>1 550 km</td><td>6,3 t</td><td class="num">30 000 000 €</td><td><span class="tag tag-old">Reconditionné</span></td></tr><tr data-cat="affaires service"><th scope="row"><a href="Avions/falcon-7x.html">Falcon 7X</a></th><td>Avion d&#x27;affaires</td><td>11 020 km</td><td>16</td><td>Mach 0,90</td><td class="num">30 000 000 €</td><td><span class="tag tag-old">Occasion</span></td></tr><tr data-cat="affaires service"><th scope="row"><a href="Avions/falcon-6x.html">Falcon 6X</a></th><td>Avion d&#x27;affaires</td><td>10 186 km</td><td>16</td><td>Mach 0,90</td><td class="num">49 000 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="affaires service"><th scope="row"><a href="Avions/falcon-8x.html">Falcon 8X</a></th><td>Avion d&#x27;affaires</td><td>11 945 km</td><td>16</td><td>Mach 0,90</td><td class="num">58 000 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="combat service"><th scope="row"><a href="Avions/rafale.html">Rafale</a></th><td>Avion de combat omnirôle</td><td>Mach 1,8</td><td>1 850 km</td><td>9,5 t</td><td class="num">90 000 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="prototype"><th scope="row"><a href="Avions/neuron.html">nEUROn</a></th><td>Démonstrateur de drone de combat</td><td>Aucun</td><td>12,5 m</td><td>≈ 7 t</td><td class="num">405 000 000 €</td><td><span class="tag tag-old">Exemplaire unique</span></td></tr><tr data-cat="prototype historique"><th scope="row"><a href="Avions/mirage-4000.html">Mirage 4000</a></th><td>Prototype de chasseur biréacteur</td><td>Mach 2,3</td><td>2 000 km</td><td>1</td><td class="num">—</td><td><span class="tag tag-off">Indisponible</span></td></tr></tbody>
+              </table>
+            </div>
+          </section>
+          <section class="cmp-section cmp-missiles">
+            <div class="table-scroll">
+              <table class="cmp-table">
+                <caption>Missiles et armements</caption>
+                <thead><tr><th scope="col">Nom</th><th scope="col">Type</th><th scope="col">Portée</th><th scope="col">Vitesse / corps</th><th scope="col">Guidage</th><th scope="col">Prix unitaire</th><th scope="col">État</th></tr></thead>
+                <tbody><tr data-cat="air-air"><th scope="row"><a href="missiles/Magic2.html">Magic II</a></th><td>Missile air-air</td><td>≈ 20 km</td><td>&gt; Mach 2</td><td>Infrarouge</td><td class="num">80 000 €</td><td><span class="tag tag-old">Déstockage</span></td></tr><tr data-cat="air-surface"><th scope="row"><a href="missiles/aasm-hammer.html">AASM Hammer</a></th><td>Armement guidé air-sol</td><td>&gt; 70 km</td><td>125–1 000 kg</td><td>GPS + IR/laser</td><td class="num">170 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="air-air"><th scope="row"><a href="missiles/super-530d.html">Super 530D</a></th><td>Missile air-air</td><td>≈ 40 km</td><td>≈ Mach 5</td><td>Semi-actif</td><td class="num">300 000 €</td><td><span class="tag tag-old">Fin de série</span></td></tr><tr data-cat="air-air"><th scope="row"><a href="missiles/MICA.html">MICA</a></th><td>Missile air-air</td><td>60–80 km</td><td>Mach 4</td><td>IR ou radar</td><td class="num">650 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="air-surface"><th scope="row"><a href="missiles/exocet-am39.html">Exocet AM39</a></th><td>Missile antinavire</td><td>50–70 km</td><td>Mach 0,9</td><td>Radar actif</td><td class="num">1 400 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="air-air"><th scope="row"><a href="missiles/meteor.html">Meteor</a></th><td>Missile air-air</td><td>&gt; 100 km</td><td>Mach 4</td><td>Radar actif</td><td class="num">2 000 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="air-surface"><th scope="row"><a href="missiles/scalp-eg.html">SCALP EG</a></th><td>Missile de croisière</td><td>&gt; 250 km</td><td>Mach 0,8</td><td>GPS + IR</td><td class="num">2 300 000 €</td><td><span class="tag tag-ok">Neuf</span></td></tr><tr data-cat="air-surface"><th scope="row"><a href="missiles/asmp-a.html">ASMP-A</a></th><td>Missile nucléaire air-sol</td><td>≈ 500 km</td><td>Mach 3</td><td>Nucléaire</td><td class="num">—</td><td><span class="tag tag-off">Vente interdite</span></td></tr></tbody>
+              </table>
+            </div>
+          </section>
+          <p class="note">Caractéristiques : valeurs publiques arrondies. Prix « à partir de » : estimations publiques quand elles existent (voir chaque fiche), indicatifs sinon.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h2>Dassault Aviation</h2>
+            <p>La boutique en ligne où l'on achète un avion de chasse aussi facilement qu'une paire de chaussettes.</p>
+          </div>
+          <div>
+            <h2>Boutique</h2>
+            <ul>
+              <li><a href="Avions.html">Avions</a></li>
+              <li><a href="Missiles.html">Missiles</a></li>
+              <li><a href="Recherche.html">Comparatif</a></li>
+              <li><a href="Panier.html">Mon panier</a></li>
+              <li><a href="Contact.html">Service client</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Siège de Dassault Aviation</h2>
+            <address>78 quai Marcel Dassault<br />92210 Saint-Cloud, France</address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Évidemment, ce site est faux : je le précise pour les trois personnes du fond qui se sont perdues sur Internet.</p>
+          <button class="easter-egg" type="button" data-jeu-open title="Tiens, c'est cliquable ?"><img class="logo" src="static/image/logo_vita.svg" alt="Logo Vitality — lancer le mini-jeu" /></button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

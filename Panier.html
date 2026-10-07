@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panier | Dassault Aviation</title>
+    <meta name="description" content="Votre panier : avions et missiles prêts à être commandés." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+    <link href="static/styleG.css" rel="stylesheet" />
+    <script>try { const t = localStorage.getItem("dassault-theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+    <script src="static/produits.js" defer></script>
+    <script src="static/panier.js" defer></script>
+    <script src="static/site.js" defer></script>
+    <script src="static/jeu.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"><strong>DASSAULT</strong><span>Aviation</span></a>
+        <nav class="header-nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="Avions.html">Avions</a><a href="Missiles.html">Missiles</a><a href="Recherche.html">Comparatif</a><a href="Contact.html">Service client</a><a class="cart-link" href="Panier.html" aria-current="page">Panier<span class="cart-count" data-cart-count hidden>0</span></a><button class="icon-btn" type="button" data-search-open hidden aria-label="Rechercher (raccourci : /)" title="Rechercher (/)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg></button><button class="icon-btn theme-toggle" type="button" data-theme-toggle hidden aria-label="Basculer entre thème clair et sombre" title="Thème clair / sombre"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button></nav>
+      </div>
+    </header>
+
+    <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Votre commande</p>
+        <h1>Mon panier</h1>
+        <p>Vérifiez vos articles avant de valider. Livraison en vol offerte, TVA non applicable (export).</p>
+      </div>
+    </section>
+      <section class="section">
+        <div class="wrap cart-grid">
+          <section class="cart-items" data-cart-list aria-live="polite" aria-label="Articles du panier">
+            <noscript><div class="panel">Le panier a besoin de JavaScript. Vous pouvez quand même acheter un article depuis sa fiche avec « Acheter maintenant ».</div></noscript>
+          </section>
+          <aside class="panel cart-summary" data-cart-summary hidden>
+            <h2>Récapitulatif</h2>
+            <dl class="cart-lines">
+              <div><dt>Articles</dt><dd data-cart-qty>0</dd></div>
+              <div><dt>Sous-total</dt><dd data-cart-subtotal></dd></div>
+              <div class="promo-line" data-promo-line hidden><dt data-promo-label>Remise</dt><dd data-promo-amount></dd></div>
+              <div><dt>Livraison en vol</dt><dd class="free">Offerte</dd></div>
+              <div><dt>TVA</dt><dd>Non applicable (export)</dd></div>
+            </dl>
+            <form class="promo" data-promo-form>
+              <label class="sr-only" for="promo-code">Code promo</label>
+              <input class="qty-input" id="promo-code" name="code" type="text" placeholder="Code promo" autocomplete="off" data-promo-input />
+              <button class="btn btn-light" type="submit">Appliquer</button>
+            </form>
+            <p class="promo-msg" data-promo-msg aria-live="polite"></p>
+            <p class="buy-total">Total <strong data-cart-total></strong></p>
+            <button class="btn btn-buy" type="button" data-checkout>Passer la commande</button>
+            <button class="link-button" type="button" data-clear>Vider le panier</button>
+            <p class="note">🔒 Paiement sécurisé · Un conseiller vérifiera vos licences d'exportation.</p>
+          </aside>
+        </div>
+      </section>
+      <div class="order-modal" data-order-modal role="dialog" aria-labelledby="cmd-title">
+        <div class="order-box">
+          <p class="order-check" aria-hidden="true">✓</p>
+          <h2 id="cmd-title">Commande confirmée !</h2>
+          <p>Numéro de commande : <strong data-order-number></strong></p>
+          <p class="order-total">Montant débité : <strong data-order-total></strong></p>
+          <p>Un conseiller vous contactera pour organiser la livraison en vol et vérifier vos licences d'exportation.</p>
+
+          <a class="btn" href="Avions.html">Continuer mes achats</a>
+          <button class="link-button" type="button" data-close>Fermer</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h2>Dassault Aviation</h2>
+            <p>La boutique en ligne où l'on achète un avion de chasse aussi facilement qu'une paire de chaussettes.</p>
+          </div>
+          <div>
+            <h2>Boutique</h2>
+            <ul>
+              <li><a href="Avions.html">Avions</a></li>
+              <li><a href="Missiles.html">Missiles</a></li>
+              <li><a href="Recherche.html">Comparatif</a></li>
+              <li><a href="Panier.html">Mon panier</a></li>
+              <li><a href="Contact.html">Service client</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Siège de Dassault Aviation</h2>
+            <address>78 quai Marcel Dassault<br />92210 Saint-Cloud, France</address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Évidemment, ce site est faux : je le précise pour les trois personnes du fond qui se sont perdues sur Internet.</p>
+          <button class="easter-egg" type="button" data-jeu-open title="Tiens, c'est cliquable ?"><img class="logo" src="static/image/logo_vita.svg" alt="Logo Vitality — lancer le mini-jeu" /></button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

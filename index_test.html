@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dassault-aviation</title>
+        <meta name="description" content="Les avions de dassault-aviation">
+        <style>
+            table,
+        
+        th,
+        td {
+            border: 1px solid #333;
+        }
+        
+ 
+        thead,
+        tfoot {
+            background-color: #333;
+            color: #fff;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="title-big">Dassault-aviation</h1>
+            <nav>
+                <a href="index.html" title="Accueil" >Accueil</a>
+                <a href="Avions.html" title="Avions" >Avions</a>
+                <a href="Recherche.html" title="Recherche" >Recherche</a>
+                <a href="Contact.html" title="Nous contacter" >Contact</a>
+            </nav>
+            <a href="static/image/banniere_dassault.jpg" target="_blank">
+                <img src="static/image/banniere_dassault.jpg" alt="Image Rafale" width="678" height="261">
+            </a>
+        </header>
+        <article>
+            <div class="Bigtexte">
+            <h2>A propos de Dassault</h2>
+            <p>blabla<span class="BigWord">OUI</span>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            </div class="Bigtexte">
+            <hr>
+            <h2>A propos des avions de combat</h2>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            <hr>
+            <h2>A propos de la recherche</h2>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+            <p>blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+
+
+        </article>
+        <table>
+            <thead>
+            <tr>
+                <td colspan="2">Dassault</td>
+            </tr>
+            <tr>
+                <th>Avions</th>
+                <th>Prix</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th>Rafale</td>
+                <td>120 000 000€</td>
+            </tr>
+            <tr>
+                <th>Mirage 2000</td>
+                <td>60 000 000€</td>
+            </tr>
+            <thead>
+            <tr>
+                <th colspan="2">Les Missiles</td>
+            </tr>
+             <tr>
+                <th>Missiles</th>
+                <th>Prix</th>
+            </tr>
+            </thead>
+            <tr>
+                <th>MICA</td>
+                <td>500 000€</td>
+            </tr>
+            <tr>
+                <th>Magic 2</th>
+                <td>100 000€</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><em>Tous les prix sont indiqué TTC</em></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Exemple facture</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prix HT</th>
+                    <th>Quantité</th>
+                    <th>Prix TTC</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Rafale</th>
+                    <td>100 000 000€</td>
+                    <td>20</td>
+                    <td>2 400 000 000€</td>
+                </tr>
+                <tr>
+                    <th>Mirage 2000</th>
+                    <td>30 000 000€</td>
+                    <td>60</td>
+                    <td>2 160 000 000€</td>
+                </tr>
+                <tr>
+                    <th>MICA</th>
+                    <td>400 000€</td>
+                    <td>253</td>
+                    <td>121 440 000€</td>
+                </tr>
+                <tr>
+                    <th>Magic 2</th>
+                    <td>50 000€</td>
+                    <td>1 043</td>
+                    <td>62 580 000€</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>Total</td>
+                    <td>3 953 350 000€</td>
+                </tr>
+                <tr>
+                    <td>Total TTC</td>
+                    <td>4 744 020 000€</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1>test formulaire</h1>
+        <form action="index_test.html">
+            <fieldset>
+                <legend>Nous contacter</legend>
+                <div>
+                    <label for="emailinput">Votre email</label>
+                    <input type="email" name ="email" id="emailinput" placeholder="contact@demo.com" required>
+                </div>
+                <div>
+                    <label for="fileinput">Pièce jointe</label>
+                    <input type="file" name="file" id="fileinput">
+                </div>
+                <div>
+                    <label for="nameinpute">Votre nom</label>
+                    <input type="text" name="firstname" id="nameinpute">
+                </div>
+                <input type="submit" value="Envoyer un email">
+                <input type="reset" value="Annuler">
+            </fieldset>
+        </form>
+
+        <footer>
+            <address>254 rue de la paix</address>
+        </footer>
+    </body>
+</html>
